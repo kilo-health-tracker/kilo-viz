@@ -113,7 +113,7 @@
             "editorMode": "code",
             "format": "table",
             "rawQuery": true,
-            "rawSql": "SELECT WEIGHT, SUBMITTED_ON::DATE, 170 as goal\r\nFROM TRACKER.COMPOSITION;",
+            "rawSql": "SELECT WEIGHT, SUBMITTED_ON::DATE, 170 as goal FROM TRACKER.COMPOSITION;",
             "refId": "A",
             "sql": {
               "columns": [
@@ -222,7 +222,7 @@
             "editorMode": "code",
             "format": "table",
             "rawQuery": true,
-            "rawSql": "select bodyfat, submitted_on::date\r\nfrom tracker.composition;",
+            "rawSql": "select bodyfat, submitted_on::date from tracker.composition;",
             "refId": "A",
             "sql": {
               "columns": [
@@ -335,7 +335,7 @@
             "editorMode": "code",
             "format": "table",
             "rawQuery": true,
-            "rawSql": "SELECT round(avg(weight), 1) as weight, date_trunc('week', submitted_on::date)::date as week\r\nfrom tracker.composition\r\ngroup by 2\r\norder by week asc;",
+            "rawSql": "SELECT round(avg(weight), 1) as weight, date_trunc('week', submitted_on::date)::date as week from tracker.composition group by 2 order by week asc;",
             "refId": "A",
             "sql": {
               "columns": [
@@ -444,7 +444,7 @@
             "editorMode": "code",
             "format": "table",
             "rawQuery": true,
-            "rawSql": "SELECT  round(avg(bodyfat), 1) as bodyfat, date_trunc('week', submitted_on::date)::date as week\r\nfrom tracker.composition\r\ngroup by 2\r\norder by week asc;",
+            "rawSql": "SELECT round(avg(bodyfat), 1) as bodyfat, date_trunc('week', submitted_on::date)::date as week from tracker.composition group by 2 order by week asc;",
             "refId": "A",
             "sql": {
               "columns": [
